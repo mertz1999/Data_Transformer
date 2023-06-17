@@ -25,6 +25,6 @@ read_ins.rm_nan('label_en')
 read_ins.filter_val(['A', 'I', 'M', 'DB'], 'identifier')
 
 # 
-write_ins = WriteJson('./new_output.json', read_ins.data)
+write_ins = WriteJson('./results/new_output.json', read_ins.data)
 write_ins.refactor()
 write_ins.put2file()

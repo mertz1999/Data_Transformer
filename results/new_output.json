@@ -1,0 +1,772 @@
+[
+    {
+        "enabled": false,
+        "label": "DB1_GEN_DB_GENERAL.mode.PLANT_ON",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 1.DBX32.0",
+            "comment": "nan",
+            "dataClass": "digital",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 1.0,
+                "address": 32
+            },
+            "dataType": {
+                "name": "boolean",
+                "bitOffset": 0
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "Result_archive.DB99_Result_DATA.Control_Resultse.HMI_archive_ON/OFF",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 99.DBX0.0",
+            "comment": "nan",
+            "dataClass": "digital",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 99.0,
+                "address": 0
+            },
+            "dataType": {
+                "name": "boolean",
+                "bitOffset": 0
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "tags.Default variable table.A_STA1-25M2_14_helium_35bar",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "A 10.1",
+            "comment": "Coax valve test gas 35bar",
+            "dataClass": "digital",
+            "source": {
+                "name": "output",
+                "address": 10
+            },
+            "dataType": {
+                "name": "boolean",
+                "bitOffset": 1
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "tags.Default variable table.A_STA1-25M3_14_helium_132bar",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "A 10.2",
+            "comment": "Coax valve test gas 132bar",
+            "dataClass": "digital",
+            "source": {
+                "name": "output",
+                "address": 10
+            },
+            "dataType": {
+                "name": "boolean",
+                "bitOffset": 2
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "tags.Default variable table.A_STA1-25M4_14_helium_176bar",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "A 10.3",
+            "comment": "Coax valve test gas 176bar",
+            "dataClass": "digital",
+            "source": {
+                "name": "output",
+                "address": 10
+            },
+            "dataType": {
+                "name": "boolean",
+                "bitOffset": 3
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB4_GEN_DB_AGGREGATE_VISU.V_Reserve_1.VISU.BMK_off",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 4.DBX0.0",
+            "comment": "if 1, BMK is hidden on Visu",
+            "dataClass": "digital",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 4.0,
+                "address": 0
+            },
+            "dataType": {
+                "name": "boolean",
+                "bitOffset": 0
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB4_GEN_DB_AGGREGATE_VISU.V_Reserve_1.VISU.EA_on",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 4.DBX0.1",
+            "comment": "if 1 the inputs/outputs (absolute) are displayed at Visu",
+            "dataClass": "digital",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 4.0,
+                "address": 0
+            },
+            "dataType": {
+                "name": "boolean",
+                "bitOffset": 1
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB4_GEN_DB_AGGREGATE_VISU.V_Reserve_1.VISU.INI_O_available",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 4.DBX0.2",
+            "comment": "Limit switch valve open is present",
+            "dataClass": "digital",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 4.0,
+                "address": 0
+            },
+            "dataType": {
+                "name": "boolean",
+                "bitOffset": 2
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB4_GEN_DB_AGGREGATE_VISU.V_Reserve_1.VISU.INI_C_available",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 4.DBX0.3",
+            "comment": "Limit switch valve closed is present",
+            "dataClass": "digital",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 4.0,
+                "address": 0
+            },
+            "dataType": {
+                "name": "boolean",
+                "bitOffset": 3
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB4_GEN_DB_AGGREGATE_VISU.V_Reserve_1.VISU.valve type_NO",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 4.DBX0.4",
+            "comment": "Display valve is NO normally open",
+            "dataClass": "digital",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 4.0,
+                "address": 0
+            },
+            "dataType": {
+                "name": "boolean",
+                "bitOffset": 4
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB4_GEN_DB_AGGREGATE_VISU.V_Reserve_1.VISU.Reserve_5",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 4.DBX0.5",
+            "comment": "nan",
+            "dataClass": "digital",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 4.0,
+                "address": 0
+            },
+            "dataType": {
+                "name": "boolean",
+                "bitOffset": 5
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB4_GEN_DB_AGGREGATE_VISU.V_Reserve_1.VISU.Reserve_6",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 4.DBX0.6",
+            "comment": "nan",
+            "dataClass": "digital",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 4.0,
+                "address": 0
+            },
+            "dataType": {
+                "name": "boolean",
+                "bitOffset": 6
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB139_STA1_cycle counter_valve.V_25M1_TOTAL",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 139.DBD192",
+            "comment": "Test pressure 3bar Total",
+            "dataClass": "discrete",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 139.0,
+                "address": 192
+            },
+            "dataType": {
+                "name": "int32"
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB139_STA1_cycle counter_valve.V_25M2_TOTAL",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 139.DBD196",
+            "comment": "Test pressure 35bar total",
+            "dataClass": "discrete",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 139.0,
+                "address": 196
+            },
+            "dataType": {
+                "name": "int32"
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB139_STA1_cycle counter_valve.V_25M3_TOTAL",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 139.DBD200",
+            "comment": "Test pressure 132bar Total",
+            "dataClass": "discrete",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 139.0,
+                "address": 200
+            },
+            "dataType": {
+                "name": "int32"
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB139_STA1_cycle counter_valve.V_25M4_TOTAL",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 139.DBD204",
+            "comment": "Test pressure 176bar Total",
+            "dataClass": "discrete",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 139.0,
+                "address": 204
+            },
+            "dataType": {
+                "name": "int32"
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB139_STA1_cycle counter_valve.V_19M2_brake_TOTAL",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 139.DBD208",
+            "comment": "Reserve Total",
+            "dataClass": "discrete",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 139.0,
+                "address": 208
+            },
+            "dataType": {
+                "name": "int32"
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB150_STA1_DB_ACTUAL.P_14B1.Print",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 150.DBD0",
+            "comment": "nan",
+            "dataClass": "analog",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 150.0,
+                "address": 0
+            },
+            "dataType": {
+                "name": "real"
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB150_STA1_DB_ACTUAL.P_14B2.Print",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 150.DBD14",
+            "comment": "nan",
+            "dataClass": "analog",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 150.0,
+                "address": 14
+            },
+            "dataType": {
+                "name": "real"
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB150_STA1_DB_ACTUAL.P_14B3.Print",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 150.DBD28",
+            "comment": "nan",
+            "dataClass": "analog",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 150.0,
+                "address": 28
+            },
+            "dataType": {
+                "name": "real"
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB150_STA1_DB_ACTUAL.P_14B4.Print",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 150.DBD42",
+            "comment": "nan",
+            "dataClass": "analog",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 150.0,
+                "address": 42
+            },
+            "dataType": {
+                "name": "real"
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB155_STA1_DB_PLANT PARAMETERS.SWITCH POINT.PRESSURE_14B1_CHAMBER_BELUEF.SP",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 155.DBD100",
+            "comment": "Switching point",
+            "dataClass": "analog",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 155.0,
+                "address": 100
+            },
+            "dataType": {
+                "name": "real"
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB155_STA1_DB_PLANT PARAMETERS.SWITCH POINT.PRESSURE_14B1_CHAMBER_BELUEF.HYS",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 155.DBD104",
+            "comment": "Hysteresis",
+            "dataClass": "analog",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 155.0,
+                "address": 104
+            },
+            "dataType": {
+                "name": "real"
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB155_STA1_DB_PLANT PARAMETERS.SWITCH POINT.PRESSURE_14B2_PRUEF_BELUEF.SP",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 155.DBD148",
+            "comment": "Switching point",
+            "dataClass": "analog",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 155.0,
+                "address": 148
+            },
+            "dataType": {
+                "name": "real"
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB155_STA1_DB_PLANT PARAMETERS.SWITCH POINT.PRESSURE_14B2_PRUEF_BELUEF.HYS",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 155.DBD152",
+            "comment": "Hysteresis",
+            "dataClass": "analog",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 155.0,
+                "address": 152
+            },
+            "dataType": {
+                "name": "real"
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB160_STA1_DB_TEST_PARAMETER.COARSE LEAKAGE MEASUREMENT.TARGET_PRESSURE_CHAMBER",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 160.DBD58",
+            "comment": "Set point chamber vacuum at which pressure drop measurement is started",
+            "dataClass": "analog",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 160.0,
+                "address": 58
+            },
+            "dataType": {
+                "name": "real"
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB160_STA1_DB_TEST_PARAMETER.STUECKZAHELER.CHARGEN_TARGET",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 160.DBW852",
+            "comment": "Batch size",
+            "dataClass": "discrete",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 160.0,
+                "address": 852
+            },
+            "dataType": {
+                "name": "int16"
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB160_STA1_DB_TEST_PARAMETER.STUECKZAHELER.NUMBER_PARTS",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 160.DBW856",
+            "comment": "Number of parts by which the counter is incremented",
+            "dataClass": "discrete",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 160.0,
+                "address": 856
+            },
+            "dataType": {
+                "name": "int16"
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB162_STA1_DB_TEST_PARA_INSIDE.COARSE LEAKAGE MEASUREMENT.SELECTION_CLEANING",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 162.DBX62.1",
+            "comment": "1 = cleaning cycle is deselected",
+            "dataClass": "digital",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 162.0,
+                "address": 62
+            },
+            "dataType": {
+                "name": "boolean",
+                "bitOffset": 1
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB90_P_DATE_TIME.o_CPU_DT_ext",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 90.DBD30",
+            "comment": "act. CPU-clock: Areapointer DateTimePLC (HMI) Ext",
+            "dataClass": "discrete",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 90.0,
+                "address": 30
+            },
+            "dataType": {
+                "name": "dword"
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB672_STA2_NIO.CHECK PRINT_132_BAR_2.ERROR CODE",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 672.DBW40",
+            "comment": "nan",
+            "dataClass": "discrete",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 672.0,
+                "address": 40
+            },
+            "dataType": {
+                "name": "int16"
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB672_STA2_NIO.CHECK PRINT_176_BAR_2.ERROR CODE",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 672.DBW42",
+            "comment": "nan",
+            "dataClass": "discrete",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 672.0,
+                "address": 42
+            },
+            "dataType": {
+                "name": "int16"
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB91_SHIFT CHANGE_TIMES.COUNT",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 91.DBB108",
+            "comment": "piece counter",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 91.0,
+                "address": 108
+            },
+            "dataType": {
+                "name": "int16",
+                "byteCount": 8
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB91_SHIFT CHANGE_TIMES.clock_minute",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 91.DBB42",
+            "comment": "Minutes",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 91.0,
+                "address": 42
+            },
+            "dataType": {
+                "name": "int16",
+                "byteCount": 2
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB91_SHIFT CHANGE_TIMES.clock_seconds",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 91.DBB46",
+            "comment": "seconds",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 91.0,
+                "address": 46
+            },
+            "dataType": {
+                "name": "int16",
+                "byteCount": 2
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB91_SHIFT CHANGE_TIMES.TAG_year",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 91.DBB2",
+            "comment": "Day of the year",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 91.0,
+                "address": 2
+            },
+            "dataType": {
+                "name": "int16",
+                "byteCount": 5
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "DB91_SHIFT CHANGE_TIMES.KW",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "DB 91.DBB10",
+            "comment": "Calendar week",
+            "source": {
+                "name": "datablock",
+                "dataBlockNumber": 91.0,
+                "address": 10
+            },
+            "dataType": {
+                "name": "int16",
+                "byteCount": 5
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "label": "tags.Default variable table.STA1_IMP_SET_deselection_flow rate_2",
+        "unit": "",
+        "scalingFactor": 1,
+        "scalingOffset": 0,
+        "config": {
+            "identifier": "M 37.0",
+            "comment": "nan",
+            "dataClass": "digital",
+            "source": {
+                "name": "memory",
+                "address": 37
+            },
+            "dataType": {
+                "name": "boolean",
+                "bitOffset": 0
+            }
+        }
+    }
+]

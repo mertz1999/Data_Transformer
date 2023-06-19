@@ -15,16 +15,25 @@ class WriteJson(Write):
         super().__init__(filename)
         self.data = data
     
-    def refactor(self):
+    def refactor(self, 
+                 identifier_label = 'identifier',
+                 label_label='label_en',
+                 source_label='source',
+                 address_label='address',
+                 data_type_label='dataType',
+                 comment_label='comment_en',
+                 dataBlockNumber='dataBlockNumber',
+                 bitOffset = 'bitOffset'                 
+                 ):
         self.results = []
         for i, row in self.data.iterrows():
             # definition of fields within the final json
-            identifier = row['identifier']
-            label = row['label_en']
-            source = row['source']
-            address = row['address']
-            data_type = row['dataType']
-            comment = str(row['comment_en'])
+            identifier = row[identifier_label]
+            label = row[label_label]
+            source = row[source_label]
+            address = row[address_label]
+            data_type = row[data_type_label]
+            comment = str(row[comment_label])
             unit = ""
             scaling_factor = 1
             scaling_offset = 0
@@ -75,7 +84,7 @@ class WriteJson(Write):
             if 'DB' in source:
                 out_dict["config"]["source"] = {
                     "name": "datablock",
-                    "dataBlockNumber": row["dataBlockNumber"],
+                    dataBlockNumber: row[dataBlockNumber],
                     "address": int(address)
                 }
             elif source == 'A':
@@ -107,10 +116,10 @@ class WriteJson(Write):
                     "byteCount": byte_count
                 }
             else:
-                if not pd.isna(row['bitOffset']):
+                if not pd.isna(row[bitOffset]):
                     out_dict["config"]["dataType"] = {
                         "name": dataType,
-                        "bitOffset": int(row['bitOffset'])
+                         bitOffset: int(row[bitOffset])
                     }
                 else: 
                     out_dict["config"]["dataType"] = {

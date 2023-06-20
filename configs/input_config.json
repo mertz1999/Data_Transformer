@@ -1,0 +1,36 @@
+{
+
+    "@validation" : [
+        {
+        "col_name" : "D_Type",
+        "values"   : ["INT", "WORD", "BOOL", "STRING", "REAL", "DWORD", "DINT"]
+        }
+    ],
+
+
+    "@renaming" : {
+        "Identifier"      : "identifier",
+        "Symbol/Tag - DE" : "label_de",
+        "Symbol/Tag - EN" : "label_en",
+        "Source"          : "source",
+        "Address"         : "address",
+        "BitOffset"       : "bitOffset",
+        "DB_Nr"           : "dataBlockNumber",
+        "D_Type"          : "dataType",
+        "Comment"         : "comment",
+        "Label"           : "label_new",
+        "Labels EN"       : "label_new_en",
+        "Selected"        : "selected",
+        "Comment EN"      : "comment_en"
+    },
+
+    "@remove_nan" : ["identifier","label_de","label_en"],
+
+    "@filtering" : [
+        {
+        "col_name" : "identifier",
+        "values"   : ["A", "I", "M", "DB"]
+        }
+    ]
+     
+}

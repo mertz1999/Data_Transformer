@@ -1,0 +1,16 @@
+{
+    "enabled"       : "False",
+    "label"         : "#label_en",
+    "unit"          : "",
+    "scalingFactor" : 1,
+    "scalingOffset" : 0,
+
+    "config": {
+        "identifier" : "#identifier",
+        "comment"    : "#comment_en",
+        "dataClass"  : "@dataClass_mapping:#dataType",
+        "source"     : "@source_mapping:#source:#dataBlockNumber:#address",
+        "dataType"   : "@dataType_mapping:#dataType:#bitOffset"
+
+    }
+}

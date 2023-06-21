@@ -1,13 +1,31 @@
+"""
+This file contain OutputMethods that will perform on dataframe and make your desired output for example make a json file based
+on your instrunction that is save in .json config file.
+"""
 import pandas as pd
 import json
 import re
 
 class OutputMethods():
-    def __init__(self, dataframe=pd.DataFrame({''})) -> None:
+    '''
+    This method is contain all method that need to apply on dataframes row for saving on output file
+    * Methods:
+        1. hash_check: if in json config file you write #col_name this method will get col_name value of a row
+        2. at_check: if in json config file you write @method_name this method will run method_name and pass all :#col_name
+        to method_name (ex. "@dataClass_mapping:#dataType"  in this instrunction dataClass_mapping will be run and pass dataType
+        value of row to this method)
+    '''
+    def __init__(self, dataframe) -> None:
+        '''
+        * inputs: pass dataframe to this class inintializaition
+        '''
         self.dataframe = dataframe
     
     # Check if input has # in first char (use for add col value)
     def hash_check(self, input, row):
+        """
+        This method get input like @col_name and select col_name value from input row
+        """
         if input != "" and input[0] == "#":
             return row[input[1:]]
         else:
@@ -15,6 +33,10 @@ class OutputMethods():
     
     # Check if input has # in first char (use for call a method)
     def at_check(self, input, row):
+        '''
+        This function check which method you select to running (@method_name) and get col_name that is
+        used like this:   ':#col_name1:#colname2'
+        '''
         if input != "" and input[0] == "@":
             args = input[1:].split(':#')
             if args[0] == "dataClass_mapping":
@@ -28,19 +50,25 @@ class OutputMethods():
     
     # mapping method for dataclass
     def dataClass_mapping(self,arg, row):
-            if row[arg] == "BOOL":
-                return "digital"
-            elif row[arg] in ["REAL"]:
-                return "analog"
-            elif row[arg] in ["INT", "DINT", "WORD", "DWORD"]:
-                return "discrete"
-            elif row[arg] == "STRING":
-                return "string"
-            else:
-                return "NOT FOUND"
+        '''
+        This method is used based on your notebook
+        '''
+        if row[arg] == "BOOL":
+            return "digital"
+        elif row[arg] in ["REAL"]:
+            return "analog"
+        elif row[arg] in ["INT", "DINT", "WORD", "DWORD"]:
+            return "discrete"
+        elif row[arg] == "STRING":
+            return "string"
+        else:
+            return "NOT FOUND"
     
     # mapping method for source
     def source_mapping(self,arg, row):
+        '''
+        This method is used based on your notebook
+        '''
         if 'DB' in row[arg[0]]:
             return {
                 "name": "datablock",
@@ -65,6 +93,9 @@ class OutputMethods():
     
     # mapping method for dataType
     def dataType_mapping(self,arg, row):
+        '''
+        This method is used based on your notebook
+        '''
         # definition of the config.dataType in the json
         if '[' in row[arg[0]] and ']' in row[arg[0]]:
             byte_count = int(re.findall(r'\d+', row[arg[0]])[0])
@@ -91,6 +122,10 @@ class OutputMethods():
 
     # Apply Json config file
     def apply_json(self, jsonfile, row):
+        '''
+        This method will read data from json config file and check @,# and pass them to hash_check and at_check methods
+        This method is a little confusing.
+        '''
         # Load json file
         with open(jsonfile, 'r') as f:
             configs = json.load(f)
@@ -118,6 +153,10 @@ class OutputMethods():
             return configs
 
     def itrate_and_apply_json(self, jsonfile):
+        '''
+        with this method we will itrate on all rows and make dictionary for saving baed on your instruction on 
+        .json config file.
+        '''
         results = []
         for i, row in self.dataframe.iterrows():
             results.append(self.apply_json(jsonfile, row))
